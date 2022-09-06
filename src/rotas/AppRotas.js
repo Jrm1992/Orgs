@@ -4,8 +4,8 @@ import {House, Star} from 'phosphor-react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
-import Home from '../telas/Home';
-import MelhoresProdutores from '../telas/MelhoresProdutores';
+import MelhoresProdutoresRotas from './MelhoresProdutoresRotas';
+import ProdutorRotas from './ProdutorRotas';
 
 const Tab = createBottomTabNavigator();
 
@@ -28,8 +28,11 @@ export default function AppRotas() {
           tabBarActiveTintColor: 'tomato',
           tabBarInactiveTintColor: 'gray',
         })}>
-        <Tab.Screen name="Home" component={Home} />
-        <Tab.Screen name="Melhores Produtores" component={MelhoresProdutores} />
+        <Tab.Screen name="Home" component={ProdutorRotas} />
+        <Tab.Screen
+          name="Melhores Produtores"
+          component={MelhoresProdutoresRotas}
+        />
       </Tab.Navigator>
     </NavigationContainer>
   );

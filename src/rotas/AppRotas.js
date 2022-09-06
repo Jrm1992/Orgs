@@ -28,8 +28,13 @@ export default function AppRotas() {
           tabBarActiveTintColor: 'tomato',
           tabBarInactiveTintColor: 'gray',
         })}>
-        <Tab.Screen name="Home" component={ProdutorRotas} />
         <Tab.Screen
+          options={{headerShown: false}}
+          name="Home"
+          component={ProdutorRotas}
+        />
+        <Tab.Screen
+          options={{headerShown: false}}
           name="Melhores Produtores"
           component={MelhoresProdutoresRotas}
         />

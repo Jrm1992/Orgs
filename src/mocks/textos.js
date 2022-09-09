@@ -7,6 +7,8 @@ const textos = {
   tituloCestas: 'Cestas',
   topoCesta: 'Detalhe da cesta',
   botaoComprar: 'Comprar',
+  botaoHome: 'Voltar a Home',
+  botaoProdutor: 'Voltar ao Produtor',
   tituloItens: 'Itens da cesta',
   mensagemCompra:
     'Agradecemos pela compra da cesta $NOME, seu pedido chegará em breve!',

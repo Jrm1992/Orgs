@@ -4,6 +4,7 @@ import React from 'react';
 import Home from '../telas/Home';
 import {Produtor} from '../telas/Produtor';
 import Cesta from '../telas/Cesta';
+import SucessoCompra from '../telas/SucessoCompra';
 
 const Stack = createNativeStackNavigator();
 
@@ -13,6 +14,7 @@ export default function ProdutorRotas({ComponentePrincipal = Home}) {
       <Stack.Screen name="HomeScreen" component={ComponentePrincipal} />
       <Stack.Screen name="Produtor" component={Produtor} />
       <Stack.Screen name="Cesta" component={Cesta} />
+      <Stack.Screen name="Sucesso" component={SucessoCompra} />
     </Stack.Navigator>
   );
 }

@@ -1,12 +1,6 @@
 import React from 'react';
 import {useNavigation} from '@react-navigation/core';
-import {
-  View,
-  Image,
-  StyleSheet,
-  Dimensions,
-  TouchableOpacity,
-} from 'react-native';
+import {Image, StyleSheet, Dimensions, TouchableOpacity} from 'react-native';
 
 import Texto from './Texto';
 
@@ -46,6 +40,7 @@ const funcaoEstilos = altura =>
     },
     gradiente: {
       position: 'absolute',
+      top: -1,
     },
     titulo: {
       width: '100%',
